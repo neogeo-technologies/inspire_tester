@@ -1,0 +1,111 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+# Django settings for ows_test project.
+
+import os
+
+DEBUG = True
+TEMPLATE_DEBUG = DEBUG
+
+PROJECT_ROOT_URL = "http://188.165.244.186/inspire_tester/" # Custom setting used in cart.views.py
+PROJECT_ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
+
+ADMINS = (
+    # ('Benjamin Chartier', 'b.chartier@neogeo-online.net'),
+)
+
+MANAGERS = ADMINS
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.contrib.gis.db.backends.postgis', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'inspire_tester',        # Or path to database file if using sqlite3.
+        'USER': 'xxxxxx',              # Not used with sqlite3.
+        'PASSWORD': 'xxxxxx',       # Not used with sqlite3.
+        'HOST': 'xxxxxxx',             # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': 'xxxxx',                  # Set to empty string for default. Not used with sqlite3.
+    }
+}
+
+
+# Local time zone for this installation. Choices can be found here:
+# http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
+# although not all choices may be available on all operating systems.
+# On Unix systems, a value of None will cause Django to use the same
+# timezone as the operating system.
+# If running in a Windows environment this must be set to the same as your
+# system time zone.
+TIME_ZONE = 'Europe/Paris'
+
+# Language code for this installation. All choices can be found here:
+# http://www.i18nguy.com/unicode/language-identifiers.html
+#LANGUAGE_CODE = 'fr-fr'
+
+SITE_ID = 1
+
+# If you set this to False, Django will make some optimizations so as not
+# to load the internationalization machinery.
+USE_I18N = True
+
+ugettext = lambda s: s
+LANGUAGES = (
+    ('fr',ugettext('Français')),
+    ('en',ugettext('English')),
+)
+
+
+# If you set this to False, Django will not format dates, numbers and
+# calendars according to the current locale
+USE_L10N = True
+
+# Absolute filesystem path to the directory that will hold user-uploaded files.
+# Example: "/home/media/media.lawrence.com/"
+MEDIA_ROOT = (os.path.join(PROJECT_ROOT_PATH, 'media')).replace("\\", "/") + '/'
+
+
+# trailing slash if there is a path component (optional in other cases).
+# Examples: "http://media.lawrence.com", "http://example.com/media/"
+MEDIA_URL = 'http://inspire_tester.neogeo-online.net/media/'
+
+# URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
+# trailing slash.
+# Examples: "http://foo.com/media/", "/media/".
+ADMIN_MEDIA_PREFIX = MEDIA_URL + 'admin_media/'
+
+# Make this unique, and don't share it with anybody.
+SECRET_KEY = 'qx(pybao!qra-@=ncu5whf3%&57)w#z$v90e@tkhdw7i6u63yp'
+
+# List of callables that know how to import templates from various sources.
+TEMPLATE_LOADERS = (
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
+#     'django.template.loaders.eggs.Loader',
+)
+
+MIDDLEWARE_CLASSES = (
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+)
+
+ROOT_URLCONF = 'inspire_tester.urls'
+
+TEMPLATE_DIRS = (
+    os.path.join(PROJECT_ROOT_PATH, 'templates'),
+)
+
+INSTALLED_APPS = (
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.sites',
+    'django.contrib.messages',
+    'django.contrib.admin',
+    'django.contrib.gis',
+    'django.contrib.admindocs',
+    'inspire_tester.wms_tester'
+)

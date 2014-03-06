@@ -1,0 +1,228 @@
+﻿body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, p {
+  margin:0;
+  padding:0;
+  }
+
+body {
+  width: 1200px;
+    margin-left: auto;
+    margin-right: auto;  
+  }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Geneva, Helvetica, Arial, "Lucida Grande", Verdana, sans-serif;
+  font-size:100%;
+  font-weight:normal;
+  }
+
+a:link, a:visited, legend, div.submit input {
+  color:#b71414;
+  text-decoration:none;
+  }
+
+a:hover {
+  color:#666;
+  text-decoration:underline;
+  }
+
+h1 { font-weight: normal; }
+h1 a { font-weight: normal; color: #b71414; }
+h1 a:hover { font-weight: normal; text-decoration:none; color: #b71414; }
+h2 { font-size: 1.1em; font-weight: normal; padding: 5px 2px 5px 0px; color: #b71414; line-height: 0.9em; }
+h2 a { font-weight: normal; color: #b71414; }
+h2 a:hover { font-weight: normal; color: #b71414; }
+h3 { text-transform: uppercase; font-size: 0.8em; line-height: 1.8em; font-weight: bold; padding: 0 2px 0 2px; letter-spacing: 0.1em; background-color: #f5eff0; color: #b71414; }
+
+div#capabilities {
+  padding:.5em 1.3em 1em 1.3em;
+  font-size: 14px;
+  }
+
+img {
+  border:0;
+  }
+
+legend {
+  padding:0;
+  }
+
+body {
+  min-width:40em;
+  padding-bottom:2em;
+  }
+
+#content {
+  padding: .5em 1.3em 1em 1.3em;
+  margin:1em 2em;
+  background:#EAEBEE;
+  }
+  
+#tabs {
+  font-size: 11px;
+  }
+
+#message p {
+  font-size: 0.9em;
+  }
+
+#content h2 {
+  color: #B71414;
+  text-decoration: none;
+  }
+
+#footer {
+  margin:1em 2em 1em 2em;
+  padding: 0.5em 0 0 1.5em;
+  font-size: 0.9em;
+  line-height:1;
+  }
+
+
+#banner {
+  margin:1.5em 2em 1em 2em;
+  padding: 0.5em 0 0 1.5em;
+  line-height:1;
+  }
+
+#banner img {
+  margin-right:.7em;
+  vertical-align:middle;
+  }
+
+#banner h1 {
+  font-size:1.6em;
+  padding-bottom:.43em;
+  }
+
+#banner h1 span {
+  border-bottom:1px solid #666;
+  }
+
+#banner p {
+  font-size:.7em;
+  line-height:100%!important;
+  padding-bottom:1em;
+  color:#666;
+  letter-spacing:.1em;
+  }
+
+#form {
+  clear:both;
+  padding:.5em 1.3em 1em 1.3em;
+  margin-top:.5em;
+  background:#EAEBEE;
+  }
+
+#form div.submit input {
+  height:34px;
+  width:110px;
+  border:none;
+  font-size:.9em;
+  color: #333;
+  cursor:pointer;
+  background:url(../img/button.png) no-repeat scroll left 1px;
+  }
+
+#form div.submit input:hover {
+  color:#1F2126;
+  }
+
+div.input {
+  padding-bottom:.5em;
+  }
+
+#form legend {
+  font-size:1.1em;
+  letter-spacing:.06em;
+  padding:0 0 .23em;
+  }
+
+#form div.submit {
+  padding-bottom:0;
+  padding-top:.5em;
+  text-align:center;
+  }
+
+#form p.instructions {
+  font-size:.8em;
+  margin-bottom:2.0em;
+  color:#4D525E;
+  }
+
+#last_services {
+  clear:both;
+  padding:.5em 1.3em 1em 1.3em;
+  margin-top:.5em;
+  font-size:.9em;
+  background:#EAEBEE;
+  }
+
+
+#summary h2 {
+  padding: 1.5em 0 0 0;
+  font-weight:bold;
+  }
+
+#summary td {
+  vertical-align: top;
+  }
+
+textarea {
+  font-size:.9em;
+  }
+
+body {
+  color: #000; background: #fff;
+  font-family: Geneva, Helvetica, Arial;
+  }
+
+div.message_header {
+  margin: 1em 0 0em 0em;
+  padding: 0.4em 0.5em 0.3em 0.5em;
+  background-color: #666;
+  color: #fff;
+  }
+  
+span.message_title {
+  font-weight:bold;
+  }
+
+div.message_desc {
+  margin: 0 0 0 0;
+  padding: 0.7em 0.5em 0.2em 0.5em;
+  background-color: #eee;
+  color: #000;
+  }
+
+div.message_detail {
+  margin: 0 0 0 0;
+  padding: 0.3em 0.5em 0.5em 0.5em;
+  background-color: #eee;
+  color: #000;
+  }
+
+.level_debug, .level_info, .level_warning, .level_error, .level_critical  {
+  background-color: #eee;
+  background-image: url(../img/icons/level_error.png);
+  background-position: 0.6em 0.6em;
+  background-repeat: no-repeat;
+  display: block;
+  min-height: 45px;
+  padding-left: 50px;
+  }
+
+.level_info  {
+  background-image: url(../img/icons/level_info.png);
+  }
+
+.level_warning  {
+  background-image: url(../img/icons/level_warning.png);
+  }
+  
+.level_error  {
+  background-image: url(../img/icons/level_error.png);
+  }
+  
+.level_critical  {
+  background-image: url(../img/icons/level_critical.png);
+  }

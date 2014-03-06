@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+{% load i18n %}
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" dir="ltr">
+<head>
+	<title>INSPIRE tester</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link href="{{ media_url }}css/styles.css" type="text/css" media="screen" rel="stylesheet" />
+	<link rel="icon" href="{{ media_url }}img/neogeo.ico" type="image/x-icon" />
+
+	<!-- jquery UI -->
+	<link type="text/css" href="{{ media_url }}js/jquery-ui/smoothness/jquery-ui-1.8.12.custom.css" rel="stylesheet" />	
+	<script type="text/javascript" src="{{ media_url }}js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="{{ media_url }}js/jquery-ui/jquery-ui.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			// Tabs
+			$('#tabs').tabs();
+		});
+	</script>
+
+	</script>
+</head>
+
+<body>
+	<div id="banner">
+		<h1>
+			<!--a href="http://www.neogeo-online.net/"><img alt="W3C" height="50" id="logo" src="./images/logo_h50.png" /></a-->
+			<a href="./"><span>WMS INSPIRE tester</span></a>
+		</h1>
+
+		<p>{% trans "Prototype built by Neogeo Technologies" %}</p>
+
+	</div>
+
+	<div id="content">
+		
+		<div id="form">
+			<form method="get" action="./" id="search_form">
+				<div class="input">
+					<legend>{% trans "WMS Service Identification" %}</legend>
+					<p>
+						<span>{% trans "Service address to be tested:" %}</span>
+						<input type="text" name="uri" id="uri" value="{{ service_uri }}" style='width:500px'></input>
+					</p>
+					<p class="instructions">{% trans "Type the URL of the service you want to test" %}</p>
+					
+					<legend>{% trans "Options" %}</legend>
+					<p>
+						<input type="checkbox" name="use_cached_cap" id="use_cached_cap" value="1" checked>{% trans "Use the cache" %}</input>
+					</p>
+					<p class="instructions">{% trans "Check this box to use the Capabilities stored in the application database" %}</p>
+				</div>
+				<div class="submit">
+					<input type="submit" value="{% trans "Launch" %}" />
+				</div>
+			</form>
+		</div>
+
+		{% if last_services %}
+		<div id="last_services">
+			{% trans "Last services:" %}
+			<table border="0" width=100%>
+				<tr><th width="20%></th><th width="70%></th></tr>
+				{% for service in last_services %}
+				<tr><td>{{ service.cap_cache_date }}</td><td><a href="./?uri={{ service.uri }}&use_cached_cap=1">{{ service.name }}</a></td></tr>
+				{% endfor %}
+			</table>
+		</div>
+		{% endif %}
+
+		{% if capabilities %}
+		<div id="tabs">
+			<ul>
+				<li><a href="#tabs-1">{% trans "Capabilities sum-up" %}</a></li>
+				<li><a href="#tabs-2">{% trans "Test results" %}</a></li>
+				<li><a href="#tabs-3">{% trans "Raw Capabilities" %}</a></li>
+				<li><a href="#tabs-4">{% trans "Debug" %}</a></li>
+			</ul>
+
+			<div id="tabs-1">
+				<div id="summary">
+					
+					<h2>{% trans "Service Identification" %}</h2>
+					<table border="0" width=100%>
+						<tr><th width="30%></th><th width="70%></th></tr>
+						<tr><td>{% trans "Service title:" %}</td><td>{{ wms_properties.Service_Title }}</td></tr>
+						<tr><td>{% trans "Service abstract:" %}</td><td>{{ wms_properties.Service_Abstract }}</td></tr>
+						<tr><td>{% trans "Service URI:" %}</td><td>TODO</td></tr>
+						<tr><td>{% trans "WMS version:" %}</td><td>{{ wms_properties.WMS_version }}</td></tr>
+						
+					{% if wms_properties.Service_Keywords|length_is:"0" %}
+						<tr><td>{% trans "Service keywords:" %}</td><td>-</td></tr>
+					{% else %}
+						<tr><td>{% trans "Service keywords:" %}</td><td>{{ wms_properties.Service_Keywords|join:", " }}</td></tr>
+					{% endif %}
+						
+						<tr><td>{% trans "Point of contact:" %}</td> <td>{{ wms_properties.Service_Contact_Person|default:"-" }}</td></tr>
+						<tr><td>{% trans "Point of contact position:" %}</td> <td>{{ wms_properties.Service_Contact_Position|default:"-" }}</td></tr>
+						<tr><td>{% trans "Point of contact address:" %}</td> <td>{{ wms_properties.Service_Contact_Address|default:"-" }}</td></tr>
+					</table>
+					
+					<h2>{% trans "Capabilities of the service" %}</h2>
+					<table border="0" width=100%>
+						<tr><th width="30%></th><th width="70%></th></tr>
+						<tr><th width="30%"></th><th width="70%"></th></tr>
+					{% if wms_properties.GetCapabilities_support %}
+						<tr><td>{% trans "GetCapabilities support:" %}</td><td>{{ wms_properties.GetCapabilities_support|join:", " }}</td></tr>
+						<tr><td>{% trans "GetCapabilities formats:" %}</td><td>{{ wms_properties.GetCapabilities_formats|join:"<br/>" }}</td></tr>
+					{% else %}
+						<tr><td>{% trans "GetCapabilities support:" %}</td><td>{% trans "No" %}</td></tr>
+					{% endif %}
+					
+					{% if wms_properties.GetMap_support %}
+						<tr><td>{% trans "GetMap support:" %}</td><td>{{ wms_properties.GetMap_support|join:", " }}</td></tr>
+						<tr><td>{% trans "GetMap formats:" %}</td><td>{{ wms_properties.GetMap_formats|join:"<br/>" }}</td></tr>
+					{% else %}
+						<tr><td>{% trans "GetMap support:" %}</td><td>{% trans "No" %}</td></tr>
+					{% endif %}
+					
+					{% if wms_properties.GetFeatureInfo_support %}
+						<tr><td>{% trans "GetFeatureInfo support:" %}</td><td>{{ wms_properties.GetFeatureInfo_support|join:", " }}</td></tr>
+						<tr><td>{% trans "GetFeatureInfo formats:" %}</td><td>{{ wms_properties.GetFeatureInfo_formats|join:"<br/>" }}</td></tr>
+					{% else %}
+						<tr><td>{% trans "GetFeatureInfo support:" %}</td><td>{% trans "No" %}</td></tr>
+					{% endif %}
+					</table>
+					
+					<h2>{% trans "Layers published by the service" %}</h2>
+					<table border="0" width=100%>
+						<tr><th width="30%></th><th width="70%></th></tr>
+						<tr><td>{% trans "Layers extent:" %}</td><td>
+								{% trans "South:" %} {{ wms_properties.BoundingBox_south }}° - 
+								{% trans "North:" %} {{ wms_properties.BoundingBox_north }}° - 
+								{% trans "West:" %} {{ wms_properties.BoundingBox_west }}° -
+								{% trans "East:" %} {{ wms_properties.BoundingBox_east }}°
+							</td></tr>
+						<tr><td>{% trans "Total number of layers:" %}</td><td>{{ wms_properties.Nb_of_layers }}</td></tr>
+						<tr><td>{% trans "Number of layer levels:" %}</td><td>{{ wms_properties.Max_layer_level }}</td></tr>
+						<tr><td>{% trans "Number of layers of first level:" %}</td><td>{{ wms_properties.Nb_of_1st_lev_layers }}</td></tr>
+						<tr><td>{% trans "Number of layers of second level:" %}</td><td>{{ wms_properties.Nb_of_2nd_lev_layers }}</td></tr>
+						<tr><td>{% trans "Number of layers of third level:" %}</td><td>{{ wms_properties.Nb_of_3rd_lev_layers }}</td></tr>
+						<tr><td>{% trans "Number of supported coordinate systems" %}</td><td>{{ wms_properties.Nb_of_CRS }}</td></tr>
+					</table>
+
+					<h2>{% trans "Languages" %}</h2>
+					<table border="0" width=100%>
+						<tr><th width="30%></th><th width="70%></th></tr>
+						<tr><td>{% trans "Default language:" %}</td><td>{{ inspire_properties.DefaultLanguage|join:", " }}</td></tr>
+						<tr><td>{% trans "Additional supported languages:" %}</td><td>{{ inspire_properties.SupportedLanguages|join:", " }}</td></tr>
+					</table>
+				</div>
+			</div>
+			
+			<div id="tabs-2">
+				<table border="0" width=100%>
+					<tr><th width="20%></th><th width="70%></th></tr>
+					<tr><td>{% trans "Number of critical errors:" %}</td><td>{{ test_results.critical }}</td></tr>
+					<tr><td>{% trans "Number of non critical errors:" %}</td><td>{{ test_results.error }}</td></tr>
+					<tr><td>{% trans "Number of warnings:" %}</td><td>{{ test_results.warning }}</td></tr>
+				</table>
+
+				{% for message in test_messages %}
+					{% if not message.success %}
+						<div class="message">
+							<div class="message_header">
+								<span class="message_code">{{ message.code }}</span> - 
+								<span class="message_level">{{ message.level }}</span> - 
+								<span class="message_title">{{ message.title }}</span>
+							{% if message.requirements|length > 0 %}
+								<span class="message_requirements"> - {{ message.requirements|join:", " }}</span>
+							{% endif %}
+							</div>
+							<div class="{{ message.level_style }}">
+								<div class="message_desc">{{ message.desc }}</div>
+								<div class="message_detail">{{ message.detail }}</div>
+							</div>
+						</div>
+					{% endif %}
+				{% empty %}
+						{% trans "Aucun message d'erreur n'a été relevé au cours des tests de conformité du service." %}
+				{% endfor %}
+			</div>
+			
+			<div id="tabs-3">
+				<pre id="capabilities" class="brush: xml">
+					{{ capabilities }}
+				</pre>
+			</div>
+			
+			<div id="tabs-4">
+					{{wms_properties}}
+					<br/>
+					<br/>
+					{{inspire_properties}}
+			</div>
+		</div>
+		{% endif %}
+	</div>
+
+	<div id="footer">
+		<a href="http://redmine.neogeo-online.net/projects/inspiretester" target="_blank">{% trans "Link to the management web application of this project" %}</a>
+	</div>
+</body>
+</html>

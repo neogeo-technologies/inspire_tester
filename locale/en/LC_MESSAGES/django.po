@@ -1,0 +1,884 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-03-06 08:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: settings.py:59
+msgid "Français"
+msgstr "French"
+
+#: settings.py:60
+msgid "English"
+msgstr "English"
+
+#: templates/wms_tester/error.html:17 templates/wms_tester/index.html:31
+msgid "Prototype built by Neogeo Technologies"
+msgstr ""
+
+#: templates/wms_tester/error.html:22
+msgid "Error"
+msgstr ""
+
+#: templates/wms_tester/error.html:25
+msgid "Service URL: "
+msgstr ""
+
+#: templates/wms_tester/error.html:34 templates/wms_tester/index.html:201
+msgid "Link to the management web application of this project"
+msgstr ""
+
+#: templates/wms_tester/index.html:40
+msgid "WMS Service Identification"
+msgstr ""
+
+#: templates/wms_tester/index.html:42
+msgid "Service address to be tested:"
+msgstr ""
+
+#: templates/wms_tester/index.html:45
+msgid "Type the URL of the service you want to test"
+msgstr ""
+
+#: templates/wms_tester/index.html:47
+msgid "Options"
+msgstr ""
+
+#: templates/wms_tester/index.html:49
+msgid "Use the cache"
+msgstr ""
+
+#: templates/wms_tester/index.html:51
+msgid ""
+"Check this box to use the Capabilities stored in the application database"
+msgstr ""
+
+#: templates/wms_tester/index.html:54
+msgid "Launch"
+msgstr ""
+
+#: templates/wms_tester/index.html:61
+msgid "Last services:"
+msgstr ""
+
+#: templates/wms_tester/index.html:74
+msgid "Capabilities sum-up"
+msgstr ""
+
+#: templates/wms_tester/index.html:75
+msgid "Test results"
+msgstr ""
+
+#: templates/wms_tester/index.html:76
+msgid "Raw Capabilities"
+msgstr ""
+
+#: templates/wms_tester/index.html:77
+msgid "Debug"
+msgstr ""
+
+#: templates/wms_tester/index.html:83
+msgid "Service Identification"
+msgstr ""
+
+#: templates/wms_tester/index.html:86
+msgid "Service title:"
+msgstr ""
+
+#: templates/wms_tester/index.html:87
+msgid "Service abstract:"
+msgstr ""
+
+#: templates/wms_tester/index.html:88
+msgid "Service URI:"
+msgstr ""
+
+#: templates/wms_tester/index.html:89
+msgid "WMS version:"
+msgstr ""
+
+#: templates/wms_tester/index.html:92 templates/wms_tester/index.html.py:94
+msgid "Service keywords:"
+msgstr ""
+
+#: templates/wms_tester/index.html:97
+msgid "Point of contact:"
+msgstr ""
+
+#: templates/wms_tester/index.html:98
+msgid "Point of contact position:"
+msgstr ""
+
+#: templates/wms_tester/index.html:99
+msgid "Point of contact address:"
+msgstr ""
+
+#: templates/wms_tester/index.html:102
+msgid "Capabilities of the service"
+msgstr ""
+
+#: templates/wms_tester/index.html:107 templates/wms_tester/index.html:110
+msgid "GetCapabilities support:"
+msgstr ""
+
+#: templates/wms_tester/index.html:108
+msgid "GetCapabilities formats:"
+msgstr ""
+
+#: templates/wms_tester/index.html:110 templates/wms_tester/index.html:117
+#: templates/wms_tester/index.html:124
+msgid "No"
+msgstr ""
+
+#: templates/wms_tester/index.html:114 templates/wms_tester/index.html:117
+#, fuzzy
+msgid "GetMap support:"
+msgstr ""
+"The GetMap operation shall be implemented. This service does not implement "
+"this operation."
+
+#: templates/wms_tester/index.html:115
+msgid "GetMap formats:"
+msgstr ""
+
+#: templates/wms_tester/index.html:121 templates/wms_tester/index.html:124
+msgid "GetFeatureInfo support:"
+msgstr ""
+
+#: templates/wms_tester/index.html:122
+msgid "GetFeatureInfo formats:"
+msgstr ""
+
+#: templates/wms_tester/index.html:128
+msgid "Layers published by the service"
+msgstr ""
+
+#: templates/wms_tester/index.html:131
+msgid "Layers extent:"
+msgstr ""
+
+#: templates/wms_tester/index.html:132
+msgid "South:"
+msgstr ""
+
+#: templates/wms_tester/index.html:133
+msgid "North:"
+msgstr ""
+
+#: templates/wms_tester/index.html:134
+msgid "West:"
+msgstr ""
+
+#: templates/wms_tester/index.html:135
+msgid "East:"
+msgstr ""
+
+#: templates/wms_tester/index.html:137
+msgid "Total number of layers:"
+msgstr ""
+
+#: templates/wms_tester/index.html:138
+msgid "Number of layer levels:"
+msgstr ""
+
+#: templates/wms_tester/index.html:139
+msgid "Number of layers of first level:"
+msgstr ""
+
+#: templates/wms_tester/index.html:140
+msgid "Number of layers of second level:"
+msgstr ""
+
+#: templates/wms_tester/index.html:141
+msgid "Number of layers of third level:"
+msgstr ""
+
+#: templates/wms_tester/index.html:142
+msgid "Number of supported coordinate systems"
+msgstr ""
+
+#: templates/wms_tester/index.html:145
+msgid "Languages"
+msgstr ""
+
+#: templates/wms_tester/index.html:148
+msgid "Default language:"
+msgstr ""
+
+#: templates/wms_tester/index.html:149
+msgid "Additional supported languages:"
+msgstr ""
+
+#: templates/wms_tester/index.html:157
+msgid "Number of critical errors:"
+msgstr ""
+
+#: templates/wms_tester/index.html:158
+msgid "Number of non critical errors:"
+msgstr ""
+
+#: templates/wms_tester/index.html:159
+msgid "Number of warnings:"
+msgstr ""
+
+#: templates/wms_tester/index.html:180
+msgid ""
+"Aucun message d'erreur n'a été relevé au cours des tests de conformité du "
+"service."
+msgstr ""
+
+#: wms_tester/views.py:78
+#, python-format
+msgid "An %s HTTP error has been encountered"
+msgstr ""
+"A %s HTTP error has been encountered while trying to access the required "
+"service. Please check the URL or maybe try later..."
+
+#: wms_tester/views.py:82
+msgid ""
+"The provided URL doesn't seem to be correct. Please check your service URL."
+msgstr ""
+
+#: wms_tester/views.py:85
+msgid ""
+"The provided URL doesn't seem to match a WMS service. We can't proceed to "
+"any further test on this URL"
+msgstr ""
+
+#: wms_tester/views.py:96 wms_tester/views.py:100
+msgid ""
+"The response coming back from the service does not seem to a Capabilities "
+"document. This service may not be a WMS service."
+msgstr ""
+
+#: wms_tester/wmsUtils/inspireTests.py:1525
+#: wms_tester/wmsUtils/inspireTests.py:1534
+#: wms_tester/wmsUtils/inspireTests.py:1568
+#: wms_tester/wmsUtils/inspireTests.py:1588
+#, python-format
+msgid "Found value(s): %(found)s - Expected value(s): %(expected)s"
+msgstr ""
+
+#: wms_tester/wmsUtils/inspireTests.py:1526
+#: wms_tester/wmsUtils/inspireTests.py:1535
+#: wms_tester/wmsUtils/inspireTests.py:1569
+#: wms_tester/wmsUtils/inspireTests.py:1589
+msgid "<None>"
+msgstr ""
+
+#: wms_tester/wmsUtils/inspireTests.py:1546
+#, python-format
+msgid "Expected value(s): %(expected)s"
+msgstr ""
+
+#: wms_tester/wmsUtils/inspireTests.py:1668
+#: wms_tester/wmsUtils/inspireTests.py:1673
+#: wms_tester/wmsUtils/inspireTests.py:1678
+#: wms_tester/wmsUtils/inspireTests.py:1682
+#: wms_tester/wmsUtils/inspireTests.py:1687
+#: wms_tester/wmsUtils/inspireTests.py:1692
+#: wms_tester/wmsUtils/inspireTests.py:1697
+#: wms_tester/wmsUtils/inspireTests.py:1702
+#, python-format
+msgid "Layers: %s"
+msgstr ""
+
+#: wms_tester/wmsUtils/inspireTests.py:1738
+#: wms_tester/wmsUtils/inspireTests.py:1763
+#: wms_tester/wmsUtils/inspireTests.py:1767
+#, python-format
+msgid "Unexpected value: %s"
+msgstr ""
+
+#: wms_tester/wmsUtils/testMessage.py:80
+msgid "msg_title_000 test scope and completeness"
+msgstr "Test scope and completeness"
+
+#: wms_tester/wmsUtils/testMessage.py:81
+msgid "msg_desc_000 test scope and completeness"
+msgstr ""
+"This application checks if the WMS GetCapabilities response is compliant to "
+"the requirements and recommandations of the INSPIRE view services technical "
+"guidances 3.0. It does not test the service against the requirements of the "
+"WMS specifications. It focuses on the INSPIRE specificities. At the moment, "
+"the test suite is not complete (by far)."
+
+#: wms_tester/wmsUtils/testMessage.py:88
+msgid "msg_title_001 WMS version"
+msgstr "WMS version"
+
+#: wms_tester/wmsUtils/testMessage.py:89
+msgid "msg_desc_001 WMS version"
+msgstr ""
+"INSPIRE view services shall implement WMS 1.3.0 standard (ISO 19128). This "
+"service does not implement this version."
+
+#: wms_tester/wmsUtils/testMessage.py:96
+msgid "msg_title_002 GetCapabilities support"
+msgstr "GetCapabilities support"
+
+#: wms_tester/wmsUtils/testMessage.py:97
+msgid "msg_desc_002 GetCapabilities support"
+msgstr ""
+"The GetCapabilities operation shall be implemented. This service does not "
+"implement this operation."
+
+#: wms_tester/wmsUtils/testMessage.py:104
+msgid "msg_title_003 GetMap support"
+msgstr "GetMap support"
+
+#: wms_tester/wmsUtils/testMessage.py:105
+msgid "msg_desc_003 GetMap support"
+msgstr ""
+"The GetMap operation shall be implemented. This service does not implement "
+"this operation."
+
+#: wms_tester/wmsUtils/testMessage.py:112
+msgid "msg_title_004 HTTP GET binding GetCapabilities"
+msgstr "HTTP GET binding for GetCapabilitiess"
+
+#: wms_tester/wmsUtils/testMessage.py:113
+msgid "msg_desc_004 HTTP GET binding GetCapabilities"
+msgstr ""
+"It is recommended that the GET method is available for the GetCapabilities "
+"operation."
+
+#: wms_tester/wmsUtils/testMessage.py:120
+msgid "msg_title_005 HTTP GET binding GetMap"
+msgstr "HTTP GET binding for GetMap"
+
+#: wms_tester/wmsUtils/testMessage.py:121
+msgid "msg_desc_005 HTTP GET binding GetMap"
+msgstr ""
+"It is recommended that the GET method is available for the GetMap operation."
+
+#: wms_tester/wmsUtils/testMessage.py:128
+msgid "msg_title_006 info scenario 1"
+msgstr "Scenario 1"
+
+#: wms_tester/wmsUtils/testMessage.py:129
+msgid "msg_desc_006 info scenario 1"
+msgstr ""
+"An element <inspire_common:MetadataUrl> is present in the element "
+"<inspire_vs:ExtendedCapabilities>. This makes the publication possible to "
+"publish some of the service metadata outside of the Capabilities of the "
+"service (see scenario 1 of the INSPIRE view services Technical Guidance). "
+"This application does not check the conformance of these external metadata."
+
+#: wms_tester/wmsUtils/testMessage.py:135
+msgid "msg_title_006.1 info scenario 2"
+msgstr "Scenario 2"
+
+#: wms_tester/wmsUtils/testMessage.py:136
+msgid "msg_desc_006.1 info scenario 2"
+msgstr ""
+"The element <inspire_common:MetadataUrl> is not present in the element "
+"<inspire_vs:ExtendedCapabilities>. This implies that all the service "
+"metadata are presnt in the service Capabilities (see scenario 2 of the "
+"INSPIRE view services Technical Guidance)."
+
+#: wms_tester/wmsUtils/testMessage.py:142
+msgid "msg_title_006.2 more than one inspire_common:MetadataUrl"
+msgstr "More than one instance of <inspire_common:MetadataUrl>"
+
+#: wms_tester/wmsUtils/testMessage.py:143
+msgid "msg_desc_006.2 more than one inspire_common:MetadataUrl"
+msgstr ""
+"More than one instance of <inspire_common:MetadataUrl> are present in the "
+"element <inspire_vs:ExtendedCapabilities> of the service Capabilities. There "
+"should only be one instance of this element at this location."
+
+#: wms_tester/wmsUtils/testMessage.py:150
+msgid "msg_title_010.0 service title missing"
+msgstr "Service title - wms:Title"
+
+#: wms_tester/wmsUtils/testMessage.py:151
+msgid "msg_desc_010.0 service title missing"
+msgstr ""
+"The service title (Resource Title / wms:Title) is a mandatory metadata for "
+"the INSPIRE view services. The Capabilities of this service does not contain "
+"this information."
+
+#: wms_tester/wmsUtils/testMessage.py:158
+msgid "msg_title_010.1 service abstract missing"
+msgstr "Service abstract - wms:Abstract"
+
+#: wms_tester/wmsUtils/testMessage.py:159
+msgid "msg_desc_010.1 service abstract missing"
+msgstr ""
+"The service abstract (Resource Abstract / wms:Abstract) is a mandatory "
+"metadata for the INSPIRE view services (this is not the case for WMS 1.3.0 / "
+"ISO 19128). The Capabilities of this service does not contain this "
+"information."
+
+#: wms_tester/wmsUtils/testMessage.py:166
+msgid "msg_title_010.2 inspire_vs:ExtendedCapabilities missing"
+msgstr "Extended Capabilities / inspire_vs:ExtendedCapabilities"
+
+#: wms_tester/wmsUtils/testMessage.py:167
+msgid "msg_desc_010.2 inspire_vs:ExtendedCapabilities missing"
+msgstr ""
+"The service Capabilities shall contain an <inspire_vs:ExtendedCapabilities> "
+"element for INSPIRE extended capabilities. This element is not present in "
+"this service Capabilities."
+
+#: wms_tester/wmsUtils/testMessage.py:173
+msgid "msg_title_011 inspire_common:ResourceType missing"
+msgstr "Resource type / inspire_common:ResourceType"
+
+#: wms_tester/wmsUtils/testMessage.py:174
+msgid "msg_desc_011 inspire_common:ResourceType missing"
+msgstr ""
+"In the context of the scenario 2 (ie when a <inspire_common:MetadataUrl> "
+"element is not present in the <inspire_vs:ExtendedCapabilities> element), an "
+"<inspire_common:ResourceType> element shall be present in the <inspire_vs:"
+"ExtendedCapabilities> element. This element is not present in this service "
+"Capabilities."
+
+#: wms_tester/wmsUtils/testMessage.py:180
+msgid "msg_title_011.1 invalid inspire_common:ResourceType value"
+msgstr "Resource type / inspire_common:ResourceType"
+
+#: wms_tester/wmsUtils/testMessage.py:181
+msgid "msg_desc_011.1 invalid inspire_common:ResourceType value"
+msgstr ""
+"The resource type described by the   <inspire_common:ResourceType> element "
+"present in the <inspire_vs:ExtendedCapabilities> element shall have the "
+"'service' value. This service use another value."
+
+#: wms_tester/wmsUtils/testMessage.py:188
+msgid "msg_title_015 inspire_common:SpatialDataServiceType missing"
+msgstr "Spatial data service type / inspire_common:SpatialDataServiceType"
+
+#: wms_tester/wmsUtils/testMessage.py:189
+msgid "msg_desc_015 inspire_common:SpatialDataServiceType missing"
+msgstr ""
+"In the context of the scenario 2 (ie when a <inspire_common:MetadataUrl> "
+"element is not present in the <inspire_vs:ExtendedCapabilities> element), an "
+"<inspire_common:SpatialDataServiceType> element shall be present in the "
+"<inspire_vs:ExtendedCapabilities> element. This element is not present in "
+"this service Capabilities."
+
+#: wms_tester/wmsUtils/testMessage.py:195
+msgid "msg_title_015.1 invalid inspire_common:SpatialDataServiceType value"
+msgstr "Spatial data service type / inspire_common:SpatialDataServiceType"
+
+#: wms_tester/wmsUtils/testMessage.py:196
+msgid "msg_desc_015.1 invalid inspire_common:SpatialDataServiceType value"
+msgstr ""
+"The resource type described by the <inspire_common:"
+"SpatialDataServiceType>element present in the <inspire_vs:"
+"ExtendedCapabilities> element shall have a 'view' value. Another value is "
+"used for this element."
+
+#: wms_tester/wmsUtils/testMessage.py:203
+msgid "msg_title_016 infoMapAccessService keyword"
+msgstr "Keyword from the ISO Classification of Spatial data Services"
+
+#: wms_tester/wmsUtils/testMessage.py:204
+msgid "msg_desc_016 infoMapAccessService keyword"
+msgstr ""
+"A keyword describing the type of service coming from the 'ISO' vocabulary "
+"Classification of Spatial data Services shall be present in the service "
+"keywords. The 'vocabulary' attribute of this keyword must be 'ISO'. Example: "
+"<wms:Keyword vocabulary=\"ISO\">infoMapAccessService</wms:Keyword>. Such "
+"keyword was not found."
+
+#: wms_tester/wmsUtils/testMessage.py:211
+msgid "msg_title_020 temporal reference subelement missing"
+msgstr "Temporal reference"
+
+#: wms_tester/wmsUtils/testMessage.py:212
+msgid "msg_desc_020 temporal reference subelement missing"
+msgstr ""
+"The temporal reference of the service shall contain one of following dates: "
+"date of publication, date of last revision, or the date of creation. None of "
+"them was found."
+
+#: wms_tester/wmsUtils/testMessage.py:218
+msgid "msg_title_020.1 temporal reference - date of last revision"
+msgstr "Temporal reference - date of last revision"
+
+#: wms_tester/wmsUtils/testMessage.py:219
+msgid "msg_desc_0020.1 temporal reference - date of last revision"
+msgstr ""
+"Date of last revision is preferred for the temporal reference. This element "
+"was not found."
+
+#: wms_tester/wmsUtils/testMessage.py:225
+msgid "msg_title_021 temporal reference missing"
+msgstr "Temporal reference missing"
+
+#: wms_tester/wmsUtils/testMessage.py:226
+msgid "msg_desc_021 temporal reference missing"
+msgstr ""
+"In the context of the scenario 2 (ie when a <inspire_common:MetadataUrl> "
+"element is not present in the <inspire_vs:ExtendedCapabilities> element), an "
+"<inspire_common:TemporalReference> element shall be present in the "
+"<inspire_vs:ExtendedCapabilities> element. This element was not found."
+
+#: wms_tester/wmsUtils/testMessage.py:233
+msgid "msg_title_022 conformity"
+msgstr "Conformity"
+
+#: wms_tester/wmsUtils/testMessage.py:234
+msgid "msg_desc_022 conformity"
+msgstr ""
+"In the context of the scenario 2 (ie when a <inspire_common:MetadataUrl> "
+"element is not present in the <inspire_vs:ExtendedCapabilities> element), an "
+"<inspire_common:Conformity> element shall be present in the <inspire_vs:"
+"ExtendedCapabilities> element. This element was not found."
+
+#: wms_tester/wmsUtils/testMessage.py:241
+msgid "msg_title_024 wms:Fees missing"
+msgstr "Conditions for access and use"
+
+#: wms_tester/wmsUtils/testMessage.py:242
+msgid "msg_desc_024 wms:Fees missing"
+msgstr "The <wms:Fees> element is mandatory. This element was not found."
+
+#: wms_tester/wmsUtils/testMessage.py:248
+msgid "msg_title_024.1 wms:Fees - no conditions apply - conditions unknown"
+msgstr ""
+"Conditions for access and use - 'no conditions apply' and 'conditions "
+"unknown' values"
+
+#: wms_tester/wmsUtils/testMessage.py:249
+msgid "msg_desc_024.1 wms:Fees - no conditions apply - conditions unknown"
+msgstr ""
+"If no conditions apply to the access and use of the resource, 'no conditions "
+"apply' shall be used. If conditions are unknown 'conditions unknown' shall "
+"be used."
+
+#: wms_tester/wmsUtils/testMessage.py:255
+msgid "msg_title_024.2 wms:Fees - none"
+msgstr "Conditions for access and use - 'none' value"
+
+#: wms_tester/wmsUtils/testMessage.py:256
+msgid "msg_desc_024.2 wms:Fees - none"
+msgstr ""
+"'none' shall not be used  in the <wms:Fees> element if no conditions apply "
+"to the access and use of the resource or if they are unknown. If no "
+"conditions apply to the access and use of the resource, 'no conditions "
+"apply' shall be used. If conditions are unknown 'conditions unknown' shall "
+"be used."
+
+#: wms_tester/wmsUtils/testMessage.py:263
+msgid "msg_title_024.3 wms:AccessConstraints missing"
+msgstr "Limitations on public access - <wms:AccessConstraints>"
+
+#: wms_tester/wmsUtils/testMessage.py:264
+msgid "msg_desc_024.3 wms:AccessConstraints missing"
+msgstr ""
+"The <wms:AccessConstraints> element is mandatory. This element was not found."
+
+#: wms_tester/wmsUtils/testMessage.py:270
+msgid "msg_title_024.4 unexpected wms:AccessConstraints value"
+msgstr ""
+"Limitations on public access - <wms:AccessConstraints> - unexpected value"
+
+#: wms_tester/wmsUtils/testMessage.py:271
+msgid "msg_desc_024.4 unexpected wms:AccessConstraints value"
+msgstr ""
+"The use of “None” is recommended when no limitations on public access apply. "
+"When constraints are imposed, the MD_RestrictionCode codelist names may be "
+"used. None of these values was found."
+
+#: wms_tester/wmsUtils/testMessage.py:278
+msgid "msg_title_0025.1 wms:ContactOrganization missing"
+msgstr "<wms:ContactOrganization> missing"
+
+#: wms_tester/wmsUtils/testMessage.py:279
+msgid "msg_desc_0025.1 wms:ContactOrganization missing"
+msgstr ""
+"The organization name shall be present in the <wms:ContactOrganization> "
+"element of the <wms:ContactPersonPrimary> element. This name was not found."
+
+#: wms_tester/wmsUtils/testMessage.py:286
+msgid "msg_title_025.2 wms:ContactElectronicMailAddress missing"
+msgstr "<wms:ContactElectronicMailAddress> missing"
+
+#: wms_tester/wmsUtils/testMessage.py:287
+msgid "msg_desc_025.2 wms:ContactElectronicMailAddress missing"
+msgstr ""
+"The e-mail address shall be present in the <wms:"
+"ContactElectronicMailAddress> element of the <wms:ContactPersonPrimary> "
+"element. This address was not found."
+
+#: wms_tester/wmsUtils/testMessage.py:294
+msgid "msg_title_026.1 wms:ContactPosition missing"
+msgstr "<wms:ContactPosition> missing"
+
+#: wms_tester/wmsUtils/testMessage.py:295
+msgid "msg_desc_0026.1 wms:ContactPosition missing"
+msgstr ""
+"The <wms:ContactPosition> element of the <wms:ContactInformation> element is "
+"mandatory. This element was not found."
+
+#: wms_tester/wmsUtils/testMessage.py:301
+msgid "msg_title_026.2 invalid wms:ContactPosition value"
+msgstr "<wms:ContactPosition> - invalid value"
+
+#: wms_tester/wmsUtils/testMessage.py:302
+msgid "msg_desc_026.2 invalid wms:ContactPosition value"
+msgstr ""
+"The <wms:ContactPosition> value of the <wms:ContactInformation> element is "
+"not valid."
+
+#: wms_tester/wmsUtils/testMessage.py:309
+msgid ""
+"msg_title_027.1 inspire_common:MetadataPointOfContact - inspire_common:"
+"OrganisationName"
+msgstr "Oragnization name of the metadata point of contact"
+
+#: wms_tester/wmsUtils/testMessage.py:310
+msgid ""
+"msg_desc_027.1 inspire_common:MetadataPointOfContact - inspire_common:"
+"OrganisationName"
+msgstr ""
+"In the context of the scenario 2 (ie when a <inspire_common:MetadataUrl> "
+"element is not present in the <inspire_vs:ExtendedCapabilities> element), "
+"the name of the organization of the metadata point of contact shall be "
+"present in in the <inspire_common:OrganisationName> element of the "
+"<inspire_common:MetadataPointOfContact> element. This name was not found."
+
+#: wms_tester/wmsUtils/testMessage.py:316
+msgid ""
+"msg_title_027.2 inspire_common:MetadataPointOfContact - inspire_common:"
+"EmailAddress"
+msgstr "E-mail address of the metadata point of contact"
+
+#: wms_tester/wmsUtils/testMessage.py:317
+msgid ""
+"msg_desc_027.2 inspire_common:MetadataPointOfContact - inspire_common:"
+"EmailAddress"
+msgstr ""
+"In the context of the scenario 2 (ie when a <inspire_common:MetadataUrl> "
+"element is not present in the <inspire_vs:ExtendedCapabilities> element), "
+"the e-mail address of the metadata point of contact shall be present in in "
+"the <inspire_common:EmailAddress> element of the <inspire_common:"
+"MetadataPointOfContact> element. This address was not found."
+
+#: wms_tester/wmsUtils/testMessage.py:323
+#, fuzzy
+msgid "msg_title_029.1 inspire_common:MetadataDate"
+msgstr "Service creation or update date"
+
+#: wms_tester/wmsUtils/testMessage.py:324
+#, fuzzy
+msgid "msg_desc_029.1 inspire_common:MetadataDate"
+msgstr ""
+"In the context of the scenario 2 (ie when a <inspire_common:MetadataUrl> "
+"element is not present in the <inspire_vs:ExtendedCapabilities> element), "
+"the creation or last update date of the service shall be present in the "
+"<inspire_common:MetadataDate> element. This date was not found."
+
+#: wms_tester/wmsUtils/testMessage.py:331
+msgid ""
+"msg_title_033.1 layer title - not the expected title for this layer name"
+msgstr "Incorrect layer title."
+
+#: wms_tester/wmsUtils/testMessage.py:332
+msgid "msg_desc_033.1 layer title - not the expected title for this layer name"
+msgstr "The titles of the following layers are unexpected."
+
+#: wms_tester/wmsUtils/testMessage.py:338
+msgid "msg_title_033.2 layer title - not a harmonised title"
+msgstr "Not a harmonised layer title"
+
+#: wms_tester/wmsUtils/testMessage.py:339
+msgid "msg_desc_033.2 layer title - not a harmonised title"
+msgstr "The title of the following layers are not harmonised."
+
+#: wms_tester/wmsUtils/testMessage.py:346
+msgid "msg_title_036 layer bbox CRS"
+msgstr "BoundingBox missing for some CRS"
+
+#: wms_tester/wmsUtils/testMessage.py:347
+msgid "msg_desc_036 layer bbox CRS"
+msgstr ""
+"Some CRS do not have a corresponding <BoundingBox>. Each layer shall have a "
+"<BoundingBox> element for each of the supported CRS."
+
+#: wms_tester/wmsUtils/testMessage.py:354
+msgid "msg_title_037 unique identifier"
+msgstr "Unique identifier missing"
+
+#: wms_tester/wmsUtils/testMessage.py:355
+msgid "msg_desc_037 unique identifier"
+msgstr ""
+"Regulation defines a Unique Resource Identifier as a value uniquely "
+"identifying an object within a namespace. "
+
+#: wms_tester/wmsUtils/testMessage.py:362
+msgid "msg_title_038 autority url"
+msgstr "AuthorityURL missing"
+
+#: wms_tester/wmsUtils/testMessage.py:363
+msgid "msg_desc_038 authority url"
+msgstr ""
+"The authority name and explanatory URL shall be defined in a separate "
+"AuthorityURL element"
+
+#: wms_tester/wmsUtils/testMessage.py:371
+msgid "msg_title_039.1 layer name - not a harmonised name"
+msgstr "Not a harmonised layer name"
+
+#: wms_tester/wmsUtils/testMessage.py:372
+msgid "msg_desc_039.1 layer name - not a harmonised name"
+msgstr "The names of the folowing layers are not harmonised."
+
+#: wms_tester/wmsUtils/testMessage.py:379
+msgid "msg_title_040.1 recommended CRS"
+msgstr "Recommended CRS missing"
+
+#: wms_tester/wmsUtils/testMessage.py:380
+msgid "msg_desc_040.1 recommended CRS"
+msgstr ""
+"The recommended CRS (EPSG:4258, EPSG:4326, CRS:84) are not supported by this "
+"service."
+
+#: wms_tester/wmsUtils/testMessage.py:387
+msgid "msg_title_042.1 default style missing"
+msgstr "Default style missing"
+
+#: wms_tester/wmsUtils/testMessage.py:388
+msgid "msg_desc_042.1 default style missing"
+msgstr ""
+"The default style named 'inspire_common:DEFAULT' is missing for the "
+"following layers."
+
+#: wms_tester/wmsUtils/testMessage.py:396
+msgid "msg_title_047 LegendURL missing"
+msgstr "LegenURL is missing"
+
+#: wms_tester/wmsUtils/testMessage.py:397
+#, fuzzy
+msgid "msg_desc_047 LegendURL missing"
+msgstr "The <wms:LegendURL> element is mandatory into the Style element. This element hasn't been found."
+
+#: wms_tester/wmsUtils/testMessage.py:404
+msgid "msg_title_070.1 inspire_common:ResponseLanguage missing"
+msgstr "Response language - inspire_common:ResponseLanguage"
+
+#: wms_tester/wmsUtils/testMessage.py:405
+msgid "msg_desc_070.1 inspire_common:ResponseLanguage missing"
+msgstr ""
+"The <inspire_common:ResponseLanguage> element shall indicate the response "
+"language used for the GetCapabilities response. This element was not found."
+
+#: wms_tester/wmsUtils/testMessage.py:411
+msgid "msg_title_070.2 more than one inspire_common:ResponseLanguage"
+msgstr "Response language - inspire_common:ResponseLanguage"
+
+#: wms_tester/wmsUtils/testMessage.py:412
+msgid "msg_desc_070.2 more than one inspire_common:ResponseLanguage"
+msgstr ""
+"Only one instance of <inspire_common:ResponseLanguage> shall be present. "
+"More than one instance were found."
+
+#: wms_tester/wmsUtils/testMessage.py:418
+msgid ""
+"msg_title_070.3 inspire_common:ResponseLanguage not in inspire_common:"
+"SupportedLanguages"
+msgstr "Response language - inspire_common:ResponseLanguage"
+
+#: wms_tester/wmsUtils/testMessage.py:419
+msgid ""
+"msg_desc_070.3 inspire_common:ResponseLanguage not in inspire_common:"
+"SupportedLanguages"
+msgstr ""
+"The language present in the <inspire_common:ResponseLanguage> element shall "
+"be part of the supported languages of the service (<inspire_common:"
+"SupportedLanguages> elements). The response language was not found in the "
+"supported languages."
+
+#: wms_tester/wmsUtils/testMessage.py:426
+msgid "msg_title_071.1 inspire_common:SupportedLanguages missing"
+msgstr "Supported lnaguages - inspire_common:SupportedLanguages"
+
+#: wms_tester/wmsUtils/testMessage.py:427
+msgid "msg_desc_071.1 inspire_common:SupportedLanguages missing"
+msgstr ""
+"The <inspire_common:SupportedLanguages> element is mandatory . This element "
+"was not found."
+
+#: wms_tester/wmsUtils/testMessage.py:433
+msgid "msg_title_071.2 more than one inspire_common:SupportedLanguages"
+msgstr "Supported lnaguages - inspire_common:SupportedLanguages"
+
+#: wms_tester/wmsUtils/testMessage.py:434
+msgid "msg_desc_071.2 more than one inspire_common:SupportedLanguages"
+msgstr ""
+"Only one instance of <inspire_common:SupportedLanguages> shall be present. "
+"More than one instance were found."
+
+#: wms_tester/wmsUtils/testMessage.py:441
+msgid "msg_title_071.3 inspire_common:DefaultLanguage missing"
+msgstr "Default language - <inspire_common:DefaultLanguage"
+
+#: wms_tester/wmsUtils/testMessage.py:442
+msgid "msg_desc_071.3 inspire_common:DefaultLanguage missing"
+msgstr ""
+"The default language shall be declared in the <inspire_common:"
+"DefaultLanguage> element. This element was not found."
+
+#: wms_tester/wmsUtils/testMessage.py:448
+msgid "msg_title_071.4 more than one inspire_common:DefaultLanguage"
+msgstr "Default language - <inspire_common:DefaultLanguage"
+
+#: wms_tester/wmsUtils/testMessage.py:449
+msgid "msg_desc_071.4 more than one inspire_common:DefaultLanguage"
+msgstr ""
+"Only one instance of <inspire_common:DefaultLanguage> shall be present. More "
+"than one instance were found."
+
+#: wms_tester/wmsUtils/testMessage.py:455
+msgid ""
+"msg_title_071.5 inspire_common:DefaultLanguage in inspire_common:"
+"SupportedLanguage"
+msgstr "Additional supported languages - inspire_common:SupportedLanguage"
+
+#: wms_tester/wmsUtils/testMessage.py:456
+msgid ""
+"msg_desc_071.5 inspire_common:DefaultLanguage in inspire_common:"
+"SupportedLanguage"
+msgstr ""
+"The language used in the <inspire_common:SupportedLanguage> elements shall "
+"be different from the default language (see <inspire_common:DefaultLanguage> "
+"element). One of the additionnal supported languages is the default "
+"language. This language must be removed from the additionnal supported "
+"languages."
+
+#: wms_tester/wmsUtils/testMessage.py:462
+msgid "msg_title_071.6 not a state member language"
+msgstr "Member state languages"
+
+#: wms_tester/wmsUtils/testMessage.py:463
+msgid "msg_desc_071.6 not a state member language"
+msgstr ""
+"One of the languages declared in the Capabilities is not a member state "
+"language."
+
+#: wms_tester/wmsUtils/testMessage.py:469
+msgid "msg_title_071.7 not a 3 letter language"
+msgstr "Languages - 3 lettre and lower case"
+
+#: wms_tester/wmsUtils/testMessage.py:470
+msgid "msg_desc_071.7 not a 3 letter language"
+msgstr ""
+"The languages codes shall be composed of 3 lower case letters. One of the "
+"declared languages does not follow this rule."

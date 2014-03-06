@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+{% load i18n %}
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" dir="ltr">
+<head>
+	<title>INSPIRE tester</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link href="{{ media_url }}css/styles.css" type="text/css" media="screen" rel="stylesheet" />
+	<link rel="icon" href="{{ media_url }}img/neogeo.ico" type="image/x-icon" />
+
+</head>
+<body>
+	<div id="banner">
+		<h1>
+			<a href="./"><span>WMS INSPIRE tester</span></a>
+		</h1>
+
+		<p>{% trans "Prototype built by Neogeo Technologies" %}</p>
+
+	</div>
+
+	<div id="content">
+		<h2>{% trans "Error" %}</h2>
+		<div id="message">
+			<p>{{message}}</p>
+			<p>{% trans "Service URL: " %} {{service_uri}}</p>
+		</div>
+	</div>
+
+	<div id="footer">
+
+	</div>
+	
+	<div id="footer">
+		<a href="http://redmine.neogeo-online.net/projects/inspiretester" target="_blank">{% trans "Link to the management web application of this project" %}</a>
+	</div>
+</body>
+</html>
