@@ -1383,10 +1383,10 @@ def getInspirePropertiesAsDict(etreeCapabilities):
     
     # Authority URL
     try:
-        layer_auth_url = ""
-        etree_auth_url = etree_layer.findall("./%sAuthorityURL" %  (NS_WMS_130))
-        if len(etree_auth_url) > 0:
-          layer_auth_url = etree_auth_url.attrib.get("name").strip()
+      layer_auth_url = ""
+      etree_auth_url = etree_layer.findall("./%sAuthorityURL" %  (NS_WMS_130))
+      if len(etree_auth_url) > 0:
+        layer_auth_url = etree_auth_url[0].attrib.get("name").strip()
     except:
       pass
 
@@ -1395,7 +1395,7 @@ def getInspirePropertiesAsDict(etreeCapabilities):
       layer_identifier = ""
       etree_identifier = etree_layer.findall("./%sIdentifier" % (NS_WMS_130))
       if len(etree_identifier) > 0:
-        layer_identifier = etree_identifier.text.strip()
+        layer_identifier = etree_identifier[0].text.strip()
     except:
       pass
     
@@ -1601,8 +1601,13 @@ def testInspireCompliance(wms_dict, inspire_dict):
   layers_err_37_detail = [] 
   layers_err_38_detail = [] 
   layers_err_47_detail = [] 
+  cpt = 0 
   for layer in layers:
-    
+    if cpt == 0:
+      rootlayer = True
+    else:
+      rootlayer = False
+    cpt += 1
     # Layer name and title
     layer_name = layer.get('name', None)
     layer_title = layer.get('title', None)
@@ -1644,7 +1649,7 @@ def testInspireCompliance(wms_dict, inspire_dict):
         layers_err_39_1_detail.append(layer_name)
 
     # Default style
-    if layer_name not in [None, '']:
+    if layer_name not in [None, ''] and not rootlayer:
       layer_style_names = layer.get('style_names', [])
       if 'inspire_common:DEFAULT' not in layer_style_names:
         layers_err_42_1_detail.append(layer_name)
@@ -1654,9 +1659,10 @@ def testInspireCompliance(wms_dict, inspire_dict):
         layers_err_36_detail.append(u"%s - %s" % (layer_name, layer_title))
 
     # AuthorityURL and identifier
-    if layer.get('identifier', None) in [None, '']:
+    if layer.get('identifier', None) in [None, ''] and not rootlayer:
         layers_err_37_detail.append(u"%s - %s" % (layer_name, layer_title))
-    if layer.get('auth_url', None) in [None, '']:
+    
+    if layer.get('auth_url', None) in [None, ''] and not rootlayer:
         layers_err_38_detail.append(u"%s - %s" % (layer_name, layer_title))
 
     # LEGEND URL
@@ -1677,6 +1683,7 @@ def testInspireCompliance(wms_dict, inspire_dict):
         m = testMessage.Message("36")
         m.detail = _("Layers: %s") % (", ".join(layers_err_36_detail))
         result.append(m)
+  
   if len(layers_err_37_detail) > 0:
         m = testMessage.Message("37.1")
         m.detail = _("Layers: %s") % (", ".join(layers_err_37_detail))

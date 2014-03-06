@@ -709,12 +709,10 @@ msgstr ""
 "il est vide."
 
 #: wms_tester/wmsUtils/testMessage.py:323
-#, fuzzy
 msgid "msg_title_029.1 inspire_common:MetadataDate"
 msgstr "Date de création ou de mise à jour du service"
 
 #: wms_tester/wmsUtils/testMessage.py:324
-#, fuzzy
 msgid "msg_desc_029.1 inspire_common:MetadataDate"
 msgstr ""
 "Dans le cadre du scénario 2 des view services d'INSPIRE, c'est-à-dire en "

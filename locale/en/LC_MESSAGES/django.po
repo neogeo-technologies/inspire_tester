@@ -673,12 +673,10 @@ msgstr ""
 "MetadataPointOfContact> element. This address was not found."
 
 #: wms_tester/wmsUtils/testMessage.py:323
-#, fuzzy
 msgid "msg_title_029.1 inspire_common:MetadataDate"
 msgstr "Service creation or update date"
 
 #: wms_tester/wmsUtils/testMessage.py:324
-#, fuzzy
 msgid "msg_desc_029.1 inspire_common:MetadataDate"
 msgstr ""
 "In the context of the scenario 2 (ie when a <inspire_common:MetadataUrl> "
