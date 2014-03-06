@@ -8,11 +8,11 @@ import os
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
-PROJECT_ROOT_URL = "http://188.165.244.186/inspire_tester/" # Custom setting used in cart.views.py
+PROJECT_ROOT_URL = "http://------------------------/inspire_tester/" # Custom setting used in cart.views.py
 PROJECT_ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
 
 ADMINS = (
-    # ('Benjamin Chartier', 'b.chartier@neogeo-online.net'),
+    # -------------------------------------------------,
 )
 
 MANAGERS = ADMINS
