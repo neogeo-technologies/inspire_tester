@@ -314,7 +314,7 @@ msgstr ""
 "the requirements and recommandations of the INSPIRE view services technical "
 "guidances 3.0. It does not test the service against the requirements of the "
 "WMS specifications. It focuses on the INSPIRE specificities. At the moment, "
-"the test suite is not complete (by far)."
+"the test suite is not complete."
 
 #: wms_tester/wmsUtils/testMessage.py:88
 msgid "msg_title_001 WMS version"

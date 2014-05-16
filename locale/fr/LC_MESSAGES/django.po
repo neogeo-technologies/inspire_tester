@@ -323,7 +323,7 @@ msgstr ""
 "implementation of INSPIRE View Services 3.0. Cette application n'a pas pour "
 "objectif de vérifier que le service est conforme aux spécifications WMS "
 "1.3.0. Elle se focalise sur les spécificités d'INSPIRE. Les tests réalisés "
-"ne sont pas complets et évolueront avec les temps."
+"ne sont pas complets et évolueront avec le temps."
 
 #: wms_tester/wmsUtils/testMessage.py:88
 msgid "msg_title_001 WMS version"

@@ -28,7 +28,7 @@
 			<a href="./"><span>WMS INSPIRE tester</span></a>
 		</h1>
 
-		<p>{% trans "Prototype built by Neogeo Technologies" %}</p>
+		<p>{% trans "Prototype built by Neogeo Technologies" %} (<a href='mailto:contact@neogeo-online.net'>Contact us</a>)</p>
 
 	</div>
 
@@ -85,7 +85,7 @@
 						<tr><th width="30%></th><th width="70%></th></tr>
 						<tr><td>{% trans "Service title:" %}</td><td>{{ wms_properties.Service_Title }}</td></tr>
 						<tr><td>{% trans "Service abstract:" %}</td><td>{{ wms_properties.Service_Abstract }}</td></tr>
-						<tr><td>{% trans "Service URI:" %}</td><td>TODO</td></tr>
+						<tr><td>{% trans "Service URI:" %}</td><td>{{ wms_properties.Service_OnlineResource }}</td></tr>
 						<tr><td>{% trans "WMS version:" %}</td><td>{{ wms_properties.WMS_version }}</td></tr>
 						
 					{% if wms_properties.Service_Keywords|length_is:"0" %}
